@@ -1,6 +1,6 @@
 const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle");
-navClose = document.getElementById("nav-close");
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
@@ -86,19 +86,21 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*======================= Portfolio Swiper ===================*/
-var swiper = new Swiper(".portfolio__container", {
-  cssMode: true,
-  loop: true,
+if (typeof Swiper !== "undefined") {
+  new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
@@ -111,14 +113,15 @@ function scrollActive() {
     const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute("id");
 
+    const navLink = document.querySelector(
+      ".nav__menu a[href*=" + sectionId + "]",
+    );
+    if (!navLink) return;
+
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+      navLink.classList.add("active-link");
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      navLink.classList.remove("active-link");
     }
   });
 }
