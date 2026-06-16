@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Huynh | Computer Science</title>
+
+    <!-- Swiper CSS for the Projects carousel -->
     <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+
+    <!-- Your main stylesheet -->
     <link rel="stylesheet" href="assets/newcss.css" />
+
+    <!-- Unicons icon library (nav icons, contact icons, etc.) -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+
+    <!-- Font Awesome (used for skill icons and footer social icons) -->
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
   </head>
 
   <body oncontextmenu="return false">
+
+    <!-- ==================== HEADER / NAV ==================== -->
+    <!-- Fixed to top on desktop, fixed to bottom on mobile (CSS handles this) -->
     <header class="header" id="header">
       <nav class="nav container">
+
+        <!-- Logo / name brand -->
         <a href="#" class="nav__logo">Ethan</a>
+
+        <!-- Navigation menu — slides up from bottom on mobile -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
@@ -46,47 +62,56 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact-Me
+                <i class="uil uil-message nav__icon"></i>Contact
               </a>
             </li>
           </ul>
+
+          <!-- X button to close the mobile menu -->
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+
         <div class="nav__btns">
-          <!-- Theme change button -->
+          <!-- Dark/light theme toggle -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
 
+          <!-- Hamburger icon — opens the mobile menu -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
         </div>
       </nav>
     </header>
-    <!-- main-->
 
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main class="main">
-      <!--========================= Home =====================-->
 
+      <!-- ========== HOME SECTION ========== -->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
+
+            <!-- Social links displayed vertically on the left -->
             <div class="home__social">
               <a
                 href="https://www.linkedin.com/in/ethan-huynh-347a422a1/"
                 target="_blank"
                 class="home__social-icon"
+                aria-label="LinkedIn"
               >
                 <i class="uil uil-linkedin-alt home__icon"></i>
               </a>
-
               <a
                 href="https://github.com/huynhetoan"
                 target="_blank"
                 class="home__social-icon"
+                aria-label="GitHub"
               >
                 <i class="uil uil-github-alt home__icon"></i>
               </a>
             </div>
+
+            <!-- Blob SVG shape with your profile photo clipped inside it -->
             <div class="home__img">
               <svg
                 class="home__blob"
@@ -109,6 +134,7 @@
                       129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                      -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
+                  <!-- Replace assets/img/temp.png with your actual photo -->
                   <image
                     class="home__blob-img"
                     x="-79"
@@ -118,22 +144,23 @@
                 </g>
               </svg>
             </div>
+
+            <!-- Main intro text -->
             <div class="home__data">
               <h1 class="home__title">Hi, I'm Ethan Huynh</h1>
-              <h3 class="home__subtitle">
-                Computer Science Student @ UAB
-              </h3>
+              <h3 class="home__subtitle">Computer Science Student @ UAB</h3>
               <p class="home__description">
                 First-generation Vietnamese American pursuing a
                 <strong>B.S. in Computer Science</strong> with a minor in Mathematics.
                 Passionate about building efficient, secure, and scalable software.
               </p>
               <a href="#contact" class="button button--flex">
-                Contact me<i class="uil uil-message button__icon"></i>
+                Contact Me <i class="uil uil-message button__icon"></i>
               </a>
             </div>
           </div>
 
+          <!-- Scroll down hint — only visible on desktop -->
           <div class="home__scroll">
             <a href="#about" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
@@ -144,162 +171,124 @@
         </div>
       </section>
 
-      <!--======================= About========================-->
-
+      <!-- ========== ABOUT SECTION ========== -->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets\img\about.jpg" alt="" class="about__img" />
+          <!-- Replace assets/img/about.jpg with your actual photo -->
+          <img src="assets/img/about.jpg" alt="Ethan Huynh" class="about__img" />
 
           <div class="about__data">
             <p class="about__description">
-            I’m a Computer Science student at the University of Alabama at Birmingham with
-            a strong foundation in object-oriented programming, data structures, and
-            mathematics. As a STEM Ambassador and Vice President of Phi Theta Kappa,
-            I’ve led community-focused STEM events and collaborated across teams.
-            I’m actively seeking internship opportunities where I can grow through
-            mentorship and real-world engineering experience.
+              I'm a Computer Science student at the University of Alabama at Birmingham
+              with a strong foundation in object-oriented programming, data structures,
+              and mathematics. As a STEM Ambassador (Full Ride) and Vice President of
+              Phi Theta Kappa, I've led community-focused STEM events and collaborated
+              across teams. I'm actively seeking internship opportunities where I can
+              grow through mentorship and real-world engineering experience.
             </p>
 
+            <!-- Quick stats row -->
             <div class="about__info">
               <div>
                 <span class="about__info-title">3.6</span>
                 <span class="about__info-name">GPA</span>
               </div>
-
               <div>
                 <span class="about__info-title">6+</span>
-                <span class="about__info-name"
-                  >
-                  Projects</span
-                >
+                <span class="about__info-name">Projects</span>
               </div>
-
               <div>
                 <span class="about__info-title">2+</span>
-                <span class="about__info-name">Years <br />Coding</span>
+                <span class="about__info-name">Years<br />Coding</span>
               </div>
             </div>
 
             <div class="about__buttons">
-              <a download="" href="assets/img/temp.png" class="button button--flex">
-                Download CV<i class="fas fa-download button__icon"></i>
+              <!-- Update href to point to your actual resume PDF -->
+              <a download="Ethan_Huynh_Resume.pdf" href="assets/img/resume.pdf" class="button button--flex">
+                Download CV <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!--===================== SKILLS =====================-->
-
+      <!-- ========== SKILLS SECTION ========== -->
+      <!-- Each .skills__content block is an accordion — clicking the header opens/closes it -->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
         <div class="skills__container container grid">
+
+          <!-- LEFT COLUMN -->
           <div>
-            <!--==================== Skill 1 =================-->
+
+            <!-- ACCORDION 1 — Programming Languages (open by default) -->
             <div class="skills__content skills__open">
               <div class="skills__header">
-                <i class="fas fa-pencil-ruler skills__icon"></i>
-
+                <i class="fas fa-code skills__icon"></i>
                 <div>
                   <h1 class="skills__title">Programming Languages</h1>
+                  <span class="skills__subtitle">Advanced proficiency</span>
                 </div>
-
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              
 
               <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
+                    <span class="skills__number">Advanced</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 85%"></span></div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__number">Advanced</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 85%"></span></div>
+                </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">C++</h3>
+                    <span class="skills__number">Advanced</span>
                   </div>
-                  
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 80%"></span></div>
                 </div>
-                
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Java</h3>
-                    </div>
-                    
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C</h3>
+                    <span class="skills__number">Familiar</span>
                   </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">JavaScript</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Python</h3>
-                    </div>
-                   
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">C</h3>
-                    </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 60%"></span></div>
                 </div>
-                
-                
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">Familiar</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 55%"></span></div>
+                </div>
               </div>
             </div>
 
-            <!--==================== Skill 2 =================-->
+            <!-- ACCORDION 2 — Tools & Technologies (closed by default) -->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="fas fa-code skills__icon"></i>
-
+                <i class="fas fa-tools skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">IT Constructs</h1>
+                  <h1 class="skills__title">Tools &amp; Technologies</h1>
+                  <span class="skills__subtitle">Frameworks &amp; libraries</span>
                 </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Data Structures & Algorithms</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Object-Oriented Programming</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Probability & Statistics</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Linear Algebra</h3>
-                  </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <!--==================== Skill 3 =================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fas fa-swatchbook skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Technologies</h1>
-                </div>
-
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
 
@@ -307,39 +296,127 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Git</h3>
+                    <span class="skills__number">Familiar</span>
                   </div>
-                  
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 70%"></span></div>
                 </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">Familiar</span>
                   </div>
-                  
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 65%"></span></div>
                 </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Matplotlib</h3>
-                  </div>
-                  
-                </div> 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">JFrame / Swing</h3>
-                  </div>
-                  
-                </div>
-                
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Tkinter</h3>
-                  </div>
-                  
-                </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__number">Familiar</span>
                   </div>
-                  
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 60%"></span></div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Matplotlib</h3>
+                    <span class="skills__number">Familiar</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 65%"></span></div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Tkinter</h3>
+                    <span class="skills__number">Familiar</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 65%"></span></div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JFrame / Swing</h3>
+                    <span class="skills__number">Familiar</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 70%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div>
+
+            <!-- ACCORDION 3 — CS Concepts (closed by default) -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-brain skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">CS Concepts</h1>
+                  <span class="skills__subtitle">Core knowledge areas</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Data Structures &amp; Algorithms</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Object-Oriented Programming</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Assembly Language</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Probability &amp; Statistics</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Linear Algebra</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Mathematical Modeling</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACCORDION 4 — Currently Learning (closed by default) -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-graduation-cap skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Currently Learning</h1>
+                  <span class="skills__subtitle">In progress</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Go</h3>
+                    <span class="skills__number">Learning</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 20%"></span></div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Swift</h3>
+                    <span class="skills__number">Learning</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 20%"></span></div>
                 </div>
               </div>
             </div>
@@ -347,299 +424,377 @@
         </div>
       </section>
 
-      <!--==================== Qualifications ==================-->
-
-      <section
-        class="qualification__section service__section"
-        id="qualification"
-      >
+      <!-- ========== QUALIFICATION SECTION ========== -->
+      <!-- Visual timeline of your education history -->
+      <section class="qualification__section" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
 
-        <div
-          class="qualification__container container grid services__container"
-        >
-          <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
-            </div>
-          </div>
+        <div class="qualification__container container">
 
+          <!-- Timeline wrapper — each .qualification__data is one row in the timeline -->
           <div class="qualification__sections">
-            <!--====== Qualification Content 1 ======-->
-            <div
-              class="qualification__content qualifiation__active services__content"
-              data-content
-              id="education"
-            >
-              <!--====== Qualification 1 ======-->
+            <div class="qualification__content qualification__active" data-content id="education">
+
+              <!-- ENTRY 1 — High School (left side of timeline) -->
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">High School Diploma</h3>
-                  <span class="qualification__subtitle"
-                    >JHS <br />High School</span
-                  >
+                  <span class="qualification__subtitle">JHS High School</span>
                   <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2023
+                    <i class="uil uil-calendar-alt"></i> Graduated 2023
                   </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
+                  <!-- "View More" triggers the modal below it -->
+                  <span class="button button--flex button--small button--link services__button">
+                    View More <i class="uil uil-arrow-right button__icon"></i>
                   </span>
+                  <!-- Modal popup for HS details -->
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 12th Summary :
-                      </h4>
+                      <h4 class="services__modal-title">High School Highlights</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Science, Maths, English,
-                            Social Studies, Engineering.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
                           <p>4.0 GPA</p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>First Place Chess tournament.</p>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Courses: Science, Math, English, Social Studies, Engineering</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>1st Place — Chess Tournament</p>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
+                <!-- The dot + line in the center of the timeline -->
                 <div>
                   <span class="qualification__rounder"></span>
                   <span class="qualification__line"></span>
                 </div>
               </div>
 
-              <!--====== Qualification 2 ======-->
+              <!-- ENTRY 2 — Community College (right side of timeline) -->
               <div class="qualification__data">
-                <div></div>
-
+                <div></div><!-- Empty left cell keeps it right-aligned -->
                 <div>
                   <span class="qualification__rounder"></span>
                   <span class="qualification__line"></span>
                 </div>
                 <div>
-                  <h3 class="qualification__title">A.S.</h3>
-                  <span class="qualification__subtitle"
-                    >BSCC <br />General Studies</span
-                  >
+                  <h3 class="qualification__title">A.S. — General Studies</h3>
+                  <span class="qualification__subtitle">Bevill State Community College</span>
                   <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2025
+                    <i class="uil uil-calendar-alt"></i> 2023 – 2025
                   </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
+                  <span class="button button--flex button--small button--link services__button">
+                    View More <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        BSCC Summary :
-                      </h4>
+                      <h4 class="services__modal-title">BSCC Highlights</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Calculus, Physics, History, English, and Literature.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
                           <p>3.5 GPA</p>
                         </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>STEM Ambassador — Full Ride Scholarship</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>All-USA Academic Team Nominee</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Vice President — Phi Theta Kappa Honor Society</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Organized STEM event with 50+ student attendees</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Carl Elliott Institute Alumni</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Courses: Calculus, Physics, History, English, Literature</p>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!--====== Qualification 3 ======-->
+              <!-- ENTRY 3 — UAB (left side of timeline) -->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">College</h3>
-                  <span class="qualification__subtitle"
-                    >UAB</span
-                  >
+                  <h3 class="qualification__title">B.S. — Computer Science</h3>
+                  <span class="qualification__subtitle">University of Alabama at Birmingham</span>
                   <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2026 - 2027
+                    <i class="uil uil-calendar-alt"></i> 2025 – 2027 (expected)
                   </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
+                  <span class="button button--flex button--small button--link services__button">
+                    View More <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">College Summary :</h4>
+                      <h4 class="services__modal-title">UAB Highlights</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            In depth study of Computer Science.
-                          </p>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>3.6 GPA — Minor in Mathematics</p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>3.6 GPA</p>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Advanced OOP in C++, Data Structures &amp; Algorithms</p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Organized STEM
-                          </p>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Assembly Language Programming, Mathematical Modeling</p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            PTK VP.
-                          </p>
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Chess Club, Robotics Club</p>
                         </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Chess Club.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Robotics Club.
-                          </p>
-                        </li>
-                        
                       </ul>
                     </div>
                   </div>
                 </div>
-
+                <!-- No line below last entry -->
                 <div>
                   <span class="qualification__rounder"></span>
-                  <!--<span class="qualification__line"></span>-->
                 </div>
               </div>
-            </div>
-          </div>
+
+            </div><!-- end qualification__content -->
+          </div><!-- end qualification__sections -->
         </div>
       </section>
 
-      <!-- portfolio -->
+      <!-- ========== PROJECTS / PORTFOLIO SECTION ========== -->
+      <!-- Uses Swiper.js carousel — swipe or use arrows to browse projects -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">My recent work</span>
 
-      <!--===================== Contact Me =====================-->
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+
+            <!-- PROJECT 1 — Employee Data Analyzer -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <!-- Replace with a screenshot of your project if you have one -->
+                <img src="assets/img/project1.png" alt="Employee Data Analyzer" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">Employee Data Analyzer</h3>
+                  <p class="portfolio__description">
+                    Analyzes employee CSV data using OOP to generate insights: average salary
+                    by department, longest-tenured employees, and department leads. Built in Java
+                    with CSV parsing, data grouping, and filtering by years of service.
+                  </p>
+                  <!-- Update href to your actual GitHub repo link -->
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 2 — UAB System -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <img src="assets/img/project2.png" alt="UAB System" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">UAB Management System</h3>
+                  <p class="portfolio__description">
+                    Console-based employee and faculty management system in Java. Reads from
+                    a .txt file and allows users to manage staff records through a menu interface.
+                    Demonstrates solid OOP design with ArrayLists for data storage.
+                  </p>
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 3 — Fractal Generator -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <img src="assets/img/project3.png" alt="Fractal Generator" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">Fractal Generator GUI</h3>
+                  <p class="portfolio__description">
+                    Algorithmic art generator built in Python. Uses recursive fractal generation,
+                    HSV gradient color blending, Matplotlib integration, and a Tkinter GUI
+                    with real-time visual updates.
+                  </p>
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 4 — Coffee Shop -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <img src="assets/img/project4.png" alt="Coffee Shop App" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">Coffee Shop App</h3>
+                  <p class="portfolio__description">
+                    GUI application in Java for ordering different types of coffee and
+                    generating a receipt. Built with JFrame, JPanel, and GridLayout, using
+                    action listeners to handle button events.
+                  </p>
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 5 — Rock Paper Scissors -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <img src="assets/img/project5.png" alt="Rock Paper Scissors" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">Rock Paper Scissors</h3>
+                  <p class="portfolio__description">
+                    Player vs. Computer game with randomized computer output to keep
+                    outcomes fair and unpredictable. A clean example of game logic
+                    and random number integration.
+                  </p>
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 6 — Address Book -->
+            <div class="swiper-slide">
+              <div class="portfolio__content grid">
+                <img src="assets/img/project6.png" alt="Address Book" class="portfolio__img" />
+                <div>
+                  <h3 class="portfolio__title">Address Book (C++)</h3>
+                  <p class="portfolio__description">
+                    Terminal-based contact manager in C++. Users can add, delete, search,
+                    and list contacts using a clean menu interface. Demonstrates proper
+                    C++ coding architecture and file organization.
+                  </p>
+                  <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small portfolio__button">
+                    View on GitHub <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end swiper-wrapper -->
+
+          <!-- Swiper navigation arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Swiper dot pagination at bottom -->
+          <div class="swiper-pagination"></div>
+
+        </div><!-- end swiper-container -->
+
+        <!-- "See all on GitHub" link below the carousel -->
+        <div class="portfolio__scroll">
+          <a href="https://github.com/huynhetoan" target="_blank" class="button button--flex button--small">
+            See All on GitHub <i class="uil uil-github-alt button__icon"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT SECTION ========== -->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
 
         <div class="contact__container container grid">
+
+          <!-- Left: contact info blocks -->
           <div>
             <div class="contact__information">
               <i class="uil uil-calling contact__icon"></i>
-
               <div>
-                <h3 class="contact__title">Contact Me</h3>
-                <span class="contact__subtitle"
-                  ><a href="tel:+1205111111"></a>+1205111111</span
-                >
+                <h3 class="contact__title">Phone</h3>
+                <span class="contact__subtitle">
+                  <a href="tel:+12054711539">+1 (205) 471-1539</a>
+                </span>
               </div>
             </div>
 
             <div class="contact__information">
               <i class="uil uil-envelope-minus contact__icon"></i>
-
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle"
-                  >ethanhuynh6000@gmail.com</span
-                >
+                <span class="contact__subtitle">ethanhuynh6000@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-linkedin-alt contact__icon"></i>
+              <div>
+                <h3 class="contact__title">LinkedIn</h3>
+                <span class="contact__subtitle">
+                  <a href="https://linkedin.com/in/ethan-huynh-347a422a1/" target="_blank">linkedin.com/in/ethan-huynh</a>
+                </span>
               </div>
             </div>
 
             <div class="contact__information">
               <i class="uil uil-map-marker contact__icon"></i>
-
               <div>
                 <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle"
-                  >Jasper, AL</span
-                >
+                <span class="contact__subtitle">Birmingham, AL</span>
               </div>
             </div>
           </div>
 
+          <!-- Right: email contact form -->
+          <!-- Note: this form uses mailto — it opens the user's email app.
+               For a backend form that actually submits, look into Formspree.io (free) -->
           <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="content__label">Name</label>
-                <input type="text" class="contact__input" />
+                <label class="contact__label">Name</label>
+                <input type="text" class="contact__input" placeholder="Your name" />
               </div>
-
               <div class="contact__content">
-                <label for="" class="content__label">Email</label>
-                <input type="Email" class="contact__input" />
+                <label class="contact__label">Email</label>
+                <input type="email" class="contact__input" placeholder="your@email.com" />
               </div>
             </div>
 
             <div class="contact__content">
-              <label for="" class="content__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
+              <label class="contact__label">Message</label>
+              <textarea cols="0" rows="7" class="contact__input" placeholder="Write your message here..."></textarea>
             </div>
 
             <div>
+              <!-- Opens a pre-filled email draft in the user's mail app -->
               <a
-                href=" mailto: ethanhuynh6000@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+                href="mailto:ethanhuynh6000@gmail.com?subject=Portfolio Inquiry"
                 class="button button--flex"
               >
-                Send Message
-                <i class="uil uil-message button__icon"></i>
+                Send Message <i class="uil uil-message button__icon"></i>
               </a>
             </div>
           </form>
@@ -647,59 +802,53 @@
       </section>
     </main>
 
-    <!--================== Footer ===============-->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
       <div class="footer__bg">
         <div class="footer__container container grid">
+
+          <!-- Left: name + title -->
           <div>
-            <h1 class="footer__title">Ethan</h1>
-            <span class="footer__subtitle"
-              >Computer Science Student</span
-            >
+            <h1 class="footer__title">Ethan Huynh</h1>
+            <span class="footer__subtitle">CS Student @ UAB | Birmingham, AL</span>
           </div>
 
+          <!-- Center: quick nav links -->
           <ul class="footer__links">
-            <li>
-              <a href="#qualification" class="footer__link">Qualification</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact-Me</a>
-            </li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#skills" class="footer__link">Skills</a></li>
+            <li><a href="#qualification" class="footer__link">Qualification</a></li>
+            <li><a href="#portfolio" class="footer__link">Projects</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
           </ul>
 
+          <!-- Right: social icons -->
           <div class="footer__socials">
-            <a
-              href="https://www.instagram.com"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/ethan-huynh-347a422a1/" target="_blank" class="footer__social" aria-label="LinkedIn">
+              <i class="uil uil-linkedin-alt"></i>
             </a>
-
-            <a
-              href="https://twitter.com/"
-              target="__blank"
-              class="footer__social"
-            >
-            <i class="fa-brands fa-x-twitter"></i>
+            <a href="https://github.com/huynhetoan" target="_blank" class="footer__social" aria-label="GitHub">
+              <i class="uil uil-github-alt"></i>
             </a>
           </div>
         </div>
 
-        <p class="footer__copy">&#169; Ethan. Footer Copy</p>
+        <p class="footer__copy">&#169; 2025 Ethan Huynh. All rights reserved.</p>
       </div>
     </footer>
 
-    <!--================== SCROLL TOP ==================-->
+    <!-- ==================== SCROLL-TO-TOP BUTTON ==================== -->
+    <!-- Hidden until user scrolls down 560px (JS toggles .show-scroll) -->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Swiper.js must load before your main JS so the carousel initializes correctly -->
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+    <!-- Font Awesome for skill section icons (fa-code, fa-tools, etc.) -->
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <!-- Your main JS file (nav, theme toggle, modals, swiper init, scroll behavior) -->
     <script src="assets/ptj.js"></script>
   </body>
 </html>
