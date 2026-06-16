@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Huynh | Computer Science</title>
 
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Ethan Huynh — Computer Science student at UAB. Portfolio of software projects in Java, Python, and C++."
+    />
+    <meta name="author" content="Ethan Huynh" />
+    <meta name="theme-color" content="#5b5bef" />
+    <link rel="canonical" href="https://huynhetoan.github.io/" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ethan Huynh | Computer Science" />
+    <meta
+      property="og:description"
+      content="Computer Science student at UAB. Portfolio of software projects in Java, Python, and C++."
+    />
+    <meta property="og:url" content="https://huynhetoan.github.io/" />
+    <meta property="og:image" content="https://huynhetoan.github.io/assets/img/temp.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ethan Huynh | Computer Science" />
+    <meta
+      name="twitter:description"
+      content="Computer Science student at UAB. Portfolio of software projects in Java, Python, and C++."
+    />
+    <meta name="twitter:image" content="https://huynhetoan.github.io/assets/img/temp.png" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%3C/text%3E%3C/svg%3E"
+    />
+
     <!-- Swiper CSS for the Projects carousel -->
-    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Your main stylesheet -->
     <link rel="stylesheet" href="assets/newcss.css" />
@@ -178,7 +213,13 @@
 
         <div class="about__container container grid">
           <!-- Replace assets/img/about.jpg with your actual photo -->
-          <img src="assets/img/about.jpg" alt="Ethan Huynh" class="about__img" />
+          <img
+            src="assets/img/about.jpg"
+            alt="Ethan Huynh"
+            class="about__img"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='assets/img/temp.png';"
+          />
 
           <div class="about__data">
             <p class="about__description">
@@ -593,7 +634,7 @@
             <div class="swiper-slide">
               <div class="portfolio__content grid">
                 <!-- Replace with a screenshot of your project if you have one -->
-                <img src="assets/img/project1.png" alt="Employee Data Analyzer" class="portfolio__img" />
+                <img src="assets/img/project1.png" alt="Employee Data Analyzer" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">Employee Data Analyzer</h3>
                   <p class="portfolio__description">
@@ -612,7 +653,7 @@
             <!-- PROJECT 2 — UAB System -->
             <div class="swiper-slide">
               <div class="portfolio__content grid">
-                <img src="assets/img/project2.png" alt="UAB System" class="portfolio__img" />
+                <img src="assets/img/project2.png" alt="UAB System" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">UAB Management System</h3>
                   <p class="portfolio__description">
@@ -630,7 +671,7 @@
             <!-- PROJECT 3 — Fractal Generator -->
             <div class="swiper-slide">
               <div class="portfolio__content grid">
-                <img src="assets/img/project3.png" alt="Fractal Generator" class="portfolio__img" />
+                <img src="assets/img/project3.png" alt="Fractal Generator" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">Fractal Generator GUI</h3>
                   <p class="portfolio__description">
@@ -648,7 +689,7 @@
             <!-- PROJECT 4 — Coffee Shop -->
             <div class="swiper-slide">
               <div class="portfolio__content grid">
-                <img src="assets/img/project4.png" alt="Coffee Shop App" class="portfolio__img" />
+                <img src="assets/img/project4.png" alt="Coffee Shop App" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">Coffee Shop App</h3>
                   <p class="portfolio__description">
@@ -666,7 +707,7 @@
             <!-- PROJECT 5 — Rock Paper Scissors -->
             <div class="swiper-slide">
               <div class="portfolio__content grid">
-                <img src="assets/img/project5.png" alt="Rock Paper Scissors" class="portfolio__img" />
+                <img src="assets/img/project5.png" alt="Rock Paper Scissors" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">Rock Paper Scissors</h3>
                   <p class="portfolio__description">
@@ -684,7 +725,7 @@
             <!-- PROJECT 6 — Address Book -->
             <div class="swiper-slide">
               <div class="portfolio__content grid">
-                <img src="assets/img/project6.png" alt="Address Book" class="portfolio__img" />
+                <img src="assets/img/project6.png" alt="Address Book" class="portfolio__img" loading="lazy" onerror="this.onerror=null;this.src='assets/img/temp.png';" />
                 <div>
                   <h3 class="portfolio__title">Address Book (C++)</h3>
                   <p class="portfolio__description">
@@ -774,18 +815,18 @@
           <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label class="contact__label">Name</label>
-                <input type="text" class="contact__input" placeholder="Your name" />
+                <label for="contact-name" class="contact__label">Name</label>
+                <input type="text" id="contact-name" name="name" class="contact__input" placeholder="Your name" autocomplete="name" />
               </div>
               <div class="contact__content">
-                <label class="contact__label">Email</label>
-                <input type="email" class="contact__input" placeholder="your@email.com" />
+                <label for="contact-email" class="contact__label">Email</label>
+                <input type="email" id="contact-email" name="email" class="contact__input" placeholder="your@email.com" autocomplete="email" />
               </div>
             </div>
 
             <div class="contact__content">
-              <label class="contact__label">Message</label>
-              <textarea cols="0" rows="7" class="contact__input" placeholder="Write your message here..."></textarea>
+              <label for="contact-message" class="contact__label">Message</label>
+              <textarea id="contact-message" name="message" cols="0" rows="7" class="contact__input" placeholder="Write your message here..."></textarea>
             </div>
 
             <div>
@@ -845,7 +886,7 @@
 
     <!-- ==================== SCRIPTS ==================== -->
     <!-- Swiper.js must load before your main JS so the carousel initializes correctly -->
-    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Font Awesome for skill section icons (fa-code, fa-tools, etc.) -->
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <!-- Your main JS file (nav, theme toggle, modals, swiper init, scroll behavior) -->
